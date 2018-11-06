@@ -4,12 +4,12 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
 
-public class Producer {
+public class AMQProducer {
 
     Session session;
     Destination destination;
 
-    public Producer() throws JMSException {
+    public AMQProducer() throws JMSException {
 
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("admin","admin","tcp://127.0.0.1:61616");
 
